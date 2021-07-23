@@ -78,7 +78,7 @@ namespace ApiCatalogoJogos.Controllers.V1
             }
             catch (JogoJaCadastradoException ex)
             {
-                return UnprocessableEntity("Já existe um jogo com este nome para esta produtora");
+                return UnprocessableEntity("Já existe um jogo com este nome para esta produtora!");
             }
 
         }
@@ -101,7 +101,7 @@ namespace ApiCatalogoJogos.Controllers.V1
             }
             catch (JogoJaCadastradoException ex)
             {
-                return NotFound("Não existe este jogo");
+                return NotFound("Não existe este jogo no catálogo.");
             }
         }
 
